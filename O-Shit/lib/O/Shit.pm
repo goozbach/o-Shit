@@ -3,18 +3,74 @@ package O::Shit;
 use warnings;
 use strict;
 use Carp;
+require Exporter;
 
-use version; $VERSION = qv('0.0.3');
+use version; my $VERSION = qv('0.0.3');
 
-# Other recommended modules (uncomment to use):
-#  use IO::Prompt;
-#  use Perl6::Export;
-#  use Perl6::Slurp;
-#  use Perl6::Say;
+our @ISA = qw(Exporter);
 
+our @EXPORT_OK = qw(hey huh weird crap ohno ohshi_);
 
+# use O::Shit qw(hey, huh, weird, crap, ohno, shitshitshit);
 # Module implementation here
+ 
+=head1 Methods
 
+Methods Avaliable
+
+=head2 hey
+
+Debug level method
+
+=cut
+sub hey {
+        print "HEY!: @_\n";
+}
+
+=head2 huh
+
+Info level method
+
+=cut
+sub huh {
+        print "Huh... @_\n";
+}
+
+=head2 weird
+
+Notice level method
+
+=cut
+sub weird {
+        print "Weird, did you notice this: @_\n";
+}
+
+=head2 crap
+
+Warning level method
+
+=cut
+sub crap {
+        print "Crap! @_\n";
+}
+
+=head2 ohno
+
+Error level method
+
+=cut
+sub ohno {
+        print "Oh NOes! @_\n";
+}
+
+=head2 ohshi_
+
+Fatal level method
+
+=cut
+sub ohshi_ {
+        print "Oh shi... I give up! @_\n";
+}
 
 1; # Magic true value required at end of module
 __END__
