@@ -19,11 +19,19 @@ Alternatively, to install with Module::Build, you can use the following commands
 	./Build test
 	./Build install
 
+USAGE:
 
-DEPENDENCIES
-
-None.
-
+        use O::Shit qw(hey huh weird crap ohno ohshi_);
+        
+        hey ("I'm walking here");
+        
+        huh ("who knew?");
+        
+        weird ("That shouldn't happen");
+        
+        crap ("It broke!");
+        
+        ohshi_ ("Run for your lives!");
 
 COPYRIGHT AND LICENCE
 
